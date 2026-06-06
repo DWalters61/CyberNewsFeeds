@@ -14,15 +14,22 @@ Nextsteps:
   I will have to create a custom Python script that rectieves specifis news articals and sends messgaes using Slack Webhooks 
 
 
-Optipn 2: Python Script 
+Optipn 2: Feed architecture 
 
-import requests
+News Sources
+(RSS Feeds / APIs)
+        │
+        ▼
+ Python Script
+        │
+        ├── Extract Articles
+        ├── Filter Keywords
+        ├── Remove Duplicates
+        └── Format Message
+        │
+        ▼
+ Slack Webhook
+        │
+        ▼
+ Slack Channel
 
-webhook = "YOUR_SLACK_WEBHOOK"
-
-requests.post(
-    webhook,
-    json={
-        "text": "New article: Microsoft releases critical security update"
-    }
-)
