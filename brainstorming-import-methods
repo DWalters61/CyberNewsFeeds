@@ -1,0 +1,28 @@
+Option 1: If RSS feeds are avaliable 
+------------------------------------
+   - Create personal Slack account 
+   - Create channel to retrieve new cyber news articals
+        Channel name "#Cyber-News"
+   - Download RSS app in Slack to utilise the RSS function in to #Cyber-News
+   - run "/feed subscribe "https.website.com/rss.xml" in channel
+
+Commennts:
+  Not all feeds I liked has RSS feeds avaliable.
+  I wanted news feeds speciif to threat intel or cyber secutiy news.
+
+Nextsteps:
+  I will have to create a custom Python script that rectieves specifis news articals and sends messgaes using Slack Webhooks 
+
+
+Optipn 2: Python Script 
+
+import requests
+
+webhook = "YOUR_SLACK_WEBHOOK"
+
+requests.post(
+    webhook,
+    json={
+        "text": "New article: Microsoft releases critical security update"
+    }
+)
