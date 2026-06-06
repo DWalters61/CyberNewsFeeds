@@ -1,0 +1,11 @@
+Creation of personalised cyber news feed 
+---------------------------------------
+
+1. Create Slack API application 
+2. Create and enable webhook URL
+    https://hooks.slack.com/services/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
+
+Cyber news links to inport:
+  https://thehackernews.com/
+  https://www.bleepingcomputer.com/
+  https://www.microsoft.com/en-us/security/blog/
